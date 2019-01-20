@@ -1,0 +1,258 @@
+@import url("css/normalize.css");
+
+
+body{
+	min-height: 1050px;
+	min-width: 1400px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	color: #000;
+	font-size: 34px;
+	line-height: 45px;
+	margin: 0;
+	padding:0;
+}
+::selection{
+	background: #2980b9;
+}
+.header{
+	height: 146px;
+	background: #ecf0f1;
+}
+.menu{
+	padding: 0;
+	margin:0 200px;
+	max-width: 1504px;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.menu__item{
+	font-size: 45px;
+	font-weight: 700;
+	color: #2980b9;
+	margin: 50px 0 0 0;
+	transition:0.1s;
+}
+.menu__item:hover{
+	color:#8e44ad;
+}
+.logo{
+	position: absolute;
+	margin:12px;
+	transition: 0.1s; 
+}
+.logo:hover{
+	transform: translateY(-10px);
+}
+.links{
+	text-decoration: none;
+}
+.slide{
+	height: 350px;
+	background: transparent;
+}
+.image1{
+	background: url(https://i.ibb.co/wB0XwFQ/bg1.jpg) center top no-repeat ;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top:0;
+	z-index: -99;
+}
+
+.text{
+	margin: 0;
+	padding:60px 200px;
+	background: #ecf0f1;
+}
+
+.web{
+	max-width: 1920px;
+	height: 770px;
+	background: url(https://i.ibb.co/vjpqXQ6/web.jpg) center top no-repeat ;
+}
+.web__container{
+	transform: translateY(-50px);
+	height: 100%;
+	max-width: 1450px;
+	margin: 0 auto;
+	opacity: 0;
+	transition: 0.3s;
+}
+.web:hover .web__container{
+	transform: translateY(0px);
+	opacity: 1;
+}
+.web__text{
+	margin: 0;
+	font-weight: 400;
+	color: #ecf0f1;
+	transition: 0.1s;
+}
+.text__hover:hover{
+	color: #e74c3c;
+}
+.web__text1{
+	text-align: center;
+	padding: 50px 0;
+}
+.web__text2{
+	text-align: right;
+	margin: 65px 0 0 0px;
+}
+.web__text3{
+	text-align: right;
+	margin: 67px 90px 0 0px;
+}
+.web__text4{
+	text-align: left;
+	margin: 25px 0 0 0px;
+}
+.web__text5{
+	text-align: right;
+	margin: 30px 0 0 0px;
+}
+.interactive{
+	height: 550px;
+	width: 100%;
+	background: #2c3e50;
+}
+.content__border{
+	max-width: 1520px;
+	height: 100%; 
+	margin: 0 auto;
+}
+.quote__alex{
+	position: relative;
+	top: 100px;
+	height: 347px;
+	max-width: 293px;
+	background: url(https://i.ibb.co/2WcVysb/Alex.png); 
+}
+.quote__helmet{
+	position: relative;
+	top: 50px;
+	margin: 0 0 0 100px;
+	height: 133px;
+	max-width: 101px;
+	background: url(https://i.ibb.co/vsByZx7/Daft-punk.png);
+	transition: 0.5s;
+}
+.quote__name{
+	opacity: 0;
+	color: #ecf0f1;
+	width: 293px;
+	margin: 200px 0 0 0;
+	text-align: center;
+	transition: 0.5s;
+}
+.quote__alex:hover .quote__helmet{
+	transform: translateY(-150px);
+}
+.quote__alex:hover .quote__name{
+	opacity:1;
+}
+
+.quote__promote{
+	width: 1100px;
+	margin-top: -200px;
+}
+.interactive__promote{
+	transform: translateY(-50px);
+	color: white;
+	font-weight: 700;
+	font-size: 53px;
+	line-height: 60px;
+	float: right;
+	text-align: right;
+	opacity: 0;
+	transition: 0.3s;
+}
+.interactive:hover .shelf__text{
+	transform: translateY(35px);
+	opacity: 1;
+}
+.interactive:hover .interactive__promote{
+	transform: translateY(35px);
+	opacity: 1;
+}
+.shelf__img{
+	position: relative;
+	top: 50px;
+	height: 417px;
+	max-width: 882px;
+	background: url(https://i.ibb.co/MgP2wC9/Shelf.png);
+}
+.shelf__text{
+	position: relative;
+	top: 70px;
+	max-width: 550px;
+	margin: 0 0 90px 50px;
+	bottom: 350px;
+	text-align: left;
+	float: left;
+}
+.shelf__promote{
+	width: 500px;
+	text-align: right;
+	margin-bottom:35px;
+}
+.test{
+	height: 640px;
+	background: #ecf0f1;
+}
+.test__window1{
+	padding-top: 60px;
+	width: 640px;
+	float: left;
+}
+.test__window2{
+	padding-top: 60px;
+	width: 640px;
+	float: right
+}
+.shpora__img{
+	background: url(https://i.ibb.co/0tY5p4Z/Shpory.png);
+	height: 447px;
+	max-width: 698px; 
+	position: relative;
+	top: 100px;
+}
+.shpora__promote{
+	width: 700px;
+	text-align: right;
+}
+
+.hotlist{
+	height: 480px;
+	background: #ecf0f1;
+}
+.list__title{
+	margin: 0;
+	padding: 56px 0;
+	font-weight: 700;
+	font-size: 60px;
+}
+.list1{
+	padding: 0;
+	float: left;
+}
+.list2{
+	margin: 0;
+	padding: 0;
+}
+.manage{
+	float: right;
+	padding: 193px 0 0 0;
+	width: 537px;
+}
+.list__item{
+	font-weight: 400;
+	color:black;
+	transition: 0.1s;
+}
+.footer{
+	height: 200px;
+	background: gray;
+}
